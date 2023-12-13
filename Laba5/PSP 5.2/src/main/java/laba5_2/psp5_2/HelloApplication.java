@@ -89,7 +89,7 @@ public class HelloApplication extends Application {
         Button button = new Button("Сохранить");
         button.setAlignment(Pos.CENTER);
         button.setOnMouseClicked(mouseEvent -> {
-            try(OutputStream fileStream = new BufferedOutputStream(new FileOutputStream("D:/Учёба/ПСП/PSP 5.2/src/main/resources/data.txt", true))) {
+            try(OutputStream fileStream = new BufferedOutputStream(new FileOutputStream("D:/Учёба/ПСП/Лабы/Laba5/PSP 5.2/src/main/resources/data.txt", true))) {
                 fileStream.write(("ФИО: " + nameField.getText() + "\n").getBytes());
 
                 String sGender = "Пол: ";

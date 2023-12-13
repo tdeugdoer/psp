@@ -19,7 +19,7 @@ public class AlarmThread extends Thread{
 
     @Override
     public void run() {
-        Media media = new Media(new File("D:/Учёба/ПСП/PSP 6/src/main/resources/Aljona_Apina_-_Den_rozhdeniya_54040505.mp3").toURI().toString());
+        Media media = new Media(new File("D:/Учёба/ПСП/Лабы/Laba6/PSP 6/src/main/resources/Aljona_Apina_-_Den_rozhdeniya_54040505.mp3").toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         while (true) {
             Calendar cr = new GregorianCalendar();

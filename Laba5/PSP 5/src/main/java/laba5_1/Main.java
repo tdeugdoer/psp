@@ -1,8 +1,6 @@
 package laba5_1;
 
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -52,26 +50,6 @@ public class Main extends Application {
         textArea.textProperty().addListener((observableValue, s, t1) -> {
             changeChoiceBox(checkBox1, checkBox2, textArea, choiceBox);
         });
-
-
-//        textArea.setOnKeyPressed(keyEvent -> {
-//            List<String> text = List.of(textArea.getText().split("\n"));
-//            ObservableList<String> even = FXCollections.observableList(IntStream.range(0, text.size()).filter(i -> i % 2 == 1).mapToObj(text::get).toList());
-//            ObservableList<String> odd = FXCollections.observableList(IntStream.range(0, text.size()).filter(i -> i % 2 == 0).mapToObj(text::get).toList());
-//            ObservableList<String> even_odd = FXCollections.observableList(text);
-//
-//            if(checkBox1.isSelected() && !checkBox2.isSelected()){
-//                choiceBox.setItems(even);
-//            } else if (!checkBox1.isSelected() && checkBox2.isSelected()){
-//                choiceBox.setItems(odd);
-//            } else if (!checkBox1.isSelected() && !checkBox2.isSelected()){
-//                choiceBox.setItems(FXCollections.observableList(new ArrayList<>()));
-//            } else {
-//                choiceBox.setItems(even_odd);
-//            }
-//            choiceBox.show();
-//        });
-
 
         HBox hBox = new HBox();
         hBox.setSpacing(8);

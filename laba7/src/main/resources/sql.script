@@ -1,0 +1,6 @@
+CREATE TABLE products(
+     id INT PRIMARY KEY AUTO_INCREMENT,
+     product_name varchar(100),
+     product_description varchar(100),
+     product_price varchar(100)
+);

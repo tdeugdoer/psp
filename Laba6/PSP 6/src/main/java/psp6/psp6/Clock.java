@@ -10,8 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.animation.KeyFrame;
@@ -70,7 +68,7 @@ public class Clock extends Application {
         stop.setOnMouseClicked(mouseEvent -> timeline.pause() );
         alarm.setOnMouseClicked(mouseEvent -> {
             List<String> textList = List.of(textField.getText().split(":"));
-            new AlarmThread(textList).start();
+            new Alarmread(textList).start();
         });
 
         VBox vBox = new VBox(hBox1, hBox2, alarmLabel, alarm, clock);
